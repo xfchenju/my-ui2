@@ -30,7 +30,7 @@ importers:
 
   examples:
     specifiers:
-      '@xfchenju/my-ui2': workspace:^1.0.4
+      '@xfchenju/my-ui2': workspace:^1.0.5
     dependencies:
       '@xfchenju/my-ui2': link:../packages/components
 
