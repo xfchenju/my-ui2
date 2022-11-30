@@ -3,14 +3,14 @@
  * @Author: chenju
  * @Date: 2022-11-30 16:10:06
  * @LastEditors: chenju
- * @LastEditTime: 2022-11-30 17:40:20
+ * @LastEditTime: 2022-11-30 18:12:24
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue"
 import dts from 'vite-plugin-dts'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+// import AutoImport from 'unplugin-auto-import/vite'
+// import Components from 'unplugin-vue-components/vite'
+// import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import { resolve } from 'path'
 
 export default defineConfig(
@@ -25,7 +25,7 @@ export default defineConfig(
       //cssCodeSplit: true,
       rollupOptions: {
         //忽略打包vue文件
-        external: ['vue'],
+        external: ['vue', 'element-plus'],
         input: ['src/index.ts'],
         output: [
           {
@@ -65,12 +65,12 @@ export default defineConfig(
         outputDir: 'lib',
         tsConfigFilePath: '../../tsconfig.json'
       }),
-      AutoImport({
-        resolvers: [ElementPlusResolver()],
-      }),
-      Components({
-        resolvers: [ElementPlusResolver()],
-      }),
+      // AutoImport({
+      //   resolvers: [ElementPlusResolver()],
+      // }),
+      // Components({
+      //   resolvers: [ElementPlusResolver()],
+      // }),
     ],
     resolve: {
       alias: {
