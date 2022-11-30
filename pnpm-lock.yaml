@@ -29,10 +29,7 @@ importers:
       vue: 3.2.36
 
   examples:
-    specifiers:
-      '@xfchenju/my-ui2': workspace:^1.0.1
-    dependencies:
-      '@xfchenju/my-ui2': link:../packages/components
+    specifiers: {}
 
   packages/components:
     specifiers:

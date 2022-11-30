@@ -8,6 +8,11 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
-    "lib": ["esnext", "dom"]
+    "lib": ["esnext", "dom"],
+    "rootDirs": ["./", "./packages/components"],
+    "paths": {
+      // 根据别名配置相关路径
+      "@/*": ["packages/components/src/*"]
+    },
   }
 }
