@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@xfchenju/my-ui2": "^1.0.1",
     "my-ui2": "workspace:^1.0.0"
   }
 }
