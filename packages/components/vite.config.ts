@@ -3,11 +3,14 @@
  * @Author: chenju
  * @Date: 2022-11-30 16:10:06
  * @LastEditors: chenju
- * @LastEditTime: 2022-11-30 16:13:25
+ * @LastEditTime: 2022-11-30 17:13:21
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue"
 import dts from 'vite-plugin-dts'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig(
   {
@@ -60,7 +63,13 @@ export default defineConfig(
       dts({
         outputDir: 'lib',
         tsConfigFilePath: '../../tsconfig.json'
-      })
+      }),
+      AutoImport({
+        resolvers: [ElementPlusResolver()],
+      }),
+      Components({
+        resolvers: [ElementPlusResolver()],
+      }),
     ]
   }
 )

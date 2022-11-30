@@ -30,11 +30,9 @@ importers:
 
   examples:
     specifiers:
-      '@xfchenju/my-ui2': workspace:^1.0.0
-      my-ui2: workspace:^1.0.0
+      '@xfchenju/my-ui2': workspace:^1.0.1
     dependencies:
       '@xfchenju/my-ui2': link:../packages/components
-      my-ui2: link:..
 
   packages/components:
     specifiers:
