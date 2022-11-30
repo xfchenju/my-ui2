@@ -32,9 +32,9 @@ importers:
 
   packages/components:
     specifiers:
-      '@my-ui2/utils': workspace:^1.0.0
+      '@xfchenju/utils': workspace:^1.0.0
     dependencies:
-      '@my-ui2/utils': link:../utils
+      '@xfchenju/utils': link:../utils
 
 packages:
 

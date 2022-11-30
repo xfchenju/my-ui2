@@ -6,6 +6,7 @@
   "module":"es/index.js",
   "scripts": {
     "build": "vite build",
+    "build:less": "esno build/buildLess",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
@@ -20,7 +21,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@my-ui2/utils": "workspace:^1.0.0"
+    "@xfchenju/utils": "workspace:^1.0.0"
   },
   "repository": {
     "type": "git",
