@@ -3,7 +3,7 @@
  * @Author: chenju
  * @Date: 2022-01-13 16:16:24
  * @LastEditors: chenju
- * @LastEditTime: 2022-11-30 18:28:50
+ * @LastEditTime: 2022-12-01 14:35:54
 -->
 <template>
   <el-table
@@ -221,7 +221,7 @@ export default defineComponent({
       }
     }
     // 全选
-    function handleCheckAllChange(val: boolean) {
+    function handleCheckAllChange(val: any) {
       console.log('handleCheckAllChange', val);
       if (val) {
         baseTableRef.value?.toggleAllSelection();
@@ -313,6 +313,44 @@ export default defineComponent({
   &.fixed-table-footer-bar--collapsed {
     left: 64px;
     width: calc(100% - 64px);
+  }
+}
+</style>
+
+<style lang="scss">
+/* 表格 */
+.g-base-table.el-table {
+  .el-table__header-wrapper {
+      // padding-top: 8px;
+  }
+
+  &.g-base-table--t-b {
+      border-top: 1px solid #ebeef5;
+  }
+
+  th.el-table__cell {
+      padding: 4px 0;
+
+      &>.cell {
+          font-size: 12px;
+          color: #212529;
+          font-weight: 500;
+      }
+  }
+
+  .el-table__header tr:first-child .el-table__cell,
+  .el-table__body td.el-table__cell {
+      &:first-child {
+          &>.cell {
+              padding-left: 24px;
+          }
+      }
+
+      &:last-child {
+          &>.cell {
+              padding-right: 24px;
+          }
+      }
   }
 }
 </style>
