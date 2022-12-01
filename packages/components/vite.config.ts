@@ -3,7 +3,7 @@
  * @Author: chenju
  * @Date: 2022-11-30 16:10:06
  * @LastEditors: chenju
- * @LastEditTime: 2022-11-30 18:12:24
+ * @LastEditTime: 2022-12-01 11:08:15
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue"
@@ -25,7 +25,7 @@ export default defineConfig(
       //cssCodeSplit: true,
       rollupOptions: {
         //忽略打包vue文件
-        external: ['vue', 'element-plus'],
+        external: ['vue', 'element-plus', 'lodash'],
         input: ['src/index.ts'],
         output: [
           {
