@@ -3,7 +3,7 @@
  * @Author: chenju
  * @Date: 2022-01-13 16:16:24
  * @LastEditors: chenju
- * @LastEditTime: 2022-12-01 14:35:54
+ * @LastEditTime: 2022-12-01 17:03:35
 -->
 <template>
   <el-table
@@ -20,7 +20,7 @@
     <slot></slot>
     <template #empty>
       <div class="empty">
-        <!-- <img class="img" src="@/assets/images/no-task.png" /> -->
+        <img class="img" src="./no-task.png" />
         <p class="g-font-14n3">列表暂无数据</p>
       </div>
     </template>
