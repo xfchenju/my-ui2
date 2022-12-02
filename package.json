@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build:ui": "gulp -f packages/components/script/build/gulpfile.ts",
-    "publish:ui": "pnpm run --filter ./packages/components/my-ui2 release"
+    "publish:ui": "pnpm run --filter ./packages/components/my-ui2 release",
+    "build:utils": "gulp -f packages/utils/script/build/gulpfile.ts",
+    "publish:utils": "pnpm run --filter ./packages/utils/dist release"
   },
   "keywords": [],
   "author": "",

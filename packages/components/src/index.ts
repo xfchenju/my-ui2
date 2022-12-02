@@ -3,7 +3,7 @@
  * @Author: chenju
  * @Date: 2022-11-30 16:03:03
  * @LastEditors: chenju
- * @LastEditTime: 2022-12-01 14:34:11
+ * @LastEditTime: 2022-12-02 17:59:36
  */
 import Button from './button'
 import Icon from './icon'
@@ -21,6 +21,8 @@ import PageTableTabs from './PageTableTabs'
 export type { BaseTableProps } from './BaseTable'
 export type { PageHeaderProps, SearchButtonOptionsType, SearchOptionsType, PageTableProps } from './GPageTable';
 
+const components = [Button, Icon, BaseTable, GNoTask, GIcon, GSelect, GPageTable, usePageTable, GSearchBar, PageHeaderNew, PageTableTabPane, PageTableTabs]
+
 export {
 	Button,
 	Icon,
@@ -35,3 +37,5 @@ export {
 	PageTableTabPane,
 	PageTableTabs,
 }
+
+export default components 

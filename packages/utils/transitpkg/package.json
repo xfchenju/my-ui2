@@ -11,6 +11,11 @@
   "author": "xfchenju",
   "license": "MIT",
   "scripts": {
-    "build": "vite build"
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xfchenju/my-ui2.git"
   }
 }
+
