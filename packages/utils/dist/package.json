@@ -1,0 +1,20 @@
+{
+  "name": "@xfchenju/utils",
+  "version": "1.1.0",
+  "description": "",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "xfchenju",
+  "license": "MIT",
+  "scripts": {
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xfchenju/my-ui2.git"
+  }
+}
