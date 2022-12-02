@@ -4,19 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:ui": "gulp -f packages/components/script/build/gulpfile.ts",
+    "publish:ui": "gulp -f packages/components/script/publish/gulpfile.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/gulp": "^4.0.10",
+    "@types/gulp-autoprefixer": "^0.0.33",
+    "@types/gulp-sass": "^5.0.0",
     "@types/sass": "^1.43.1",
     "@vitejs/plugin-vue": "^3.2.0",
     "cpy": "^9.0.1",
     "element-plus": "^2.2.25",
     "fast-glob": "^3.2.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
     "lodash": "^4.17.21",
     "sass": "^1.56.1",
+    "sucrase": "^3.29.0",
     "typescript": "^4.9.3",
     "unplugin-auto-import": "^0.12.0",
     "unplugin-vue-components": "^0.22.11",

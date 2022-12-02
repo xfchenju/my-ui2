@@ -3,7 +3,7 @@
  * @Author: chenju
  * @Date: 2022-11-30 16:02:39
  * @LastEditors: chenju
- * @LastEditTime: 2022-12-01 16:10:10
+ * @LastEditTime: 2022-12-02 16:18:12
 -->
 <template>
   <div>
@@ -13,8 +13,12 @@
       <div class="test">测试模块
         <span class="test-text">测试文字</span>
       </div>
+      <div class="test2">测试模块2
+        <span class="test-text">测试文字</span>
+      </div>
   </div>
 </template>
 <style scoped>
 @import './index.scss';
+@import './style/test.scss';
 </style>
