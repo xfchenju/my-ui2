@@ -1,18 +1,31 @@
 {
   "name": "@xfchenju/my-ui2",
   "version": "1.0.9",
+  "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
     "es",
     "lib"
   ],
+  "scripts": {
+    "release": "release-it"
+  },
   "keywords": [
     "my-ui2",
     "vue3组件库"
   ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "typings": "lib/index.d.ts",
   "author": "xfchenju",
   "license": "MIT",
-  "description": "",
-  "typings": "lib/index.d.ts"
+  "dependencies": {
+    "@xfchenju/utils": "workspace:^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xfchenju/my-ui2.git"
+  }
 }
