@@ -3,7 +3,7 @@
  * @Author: qingyang
  * @Date: 2022-03-21 14:03:51
  * @LastEditors: chenju
- * @LastEditTime: 2022-12-01 11:10:15
+ * @LastEditTime: 2022-12-02 18:34:13
 -->
 
 <template>
@@ -145,7 +145,7 @@
 import { defineComponent, reactive, ref, PropType, h, nextTick } from 'vue';
 import type { SearchOptionsType } from '@/GPageTable';
 import * as selectOptions from '@/constants/enum';
-import { buildUUID } from '@/utils/uuid';
+import { buildUUID } from '@xfchenju/utils';
 import { debounce } from 'lodash';
 import GSelect from '../GSelect';
 import GIcon from '../GIcon';

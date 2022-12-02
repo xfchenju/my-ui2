@@ -3,14 +3,10 @@
  * @Author: chenju
  * @Date: 2022-11-30 18:35:33
  * @LastEditors: chenju
- * @LastEditTime: 2022-11-30 18:41:47
+ * @LastEditTime: 2022-12-02 18:35:48
  */
-import { App } from 'vue'
 import GIcon from './GIcon.vue';
-
-GIcon.install = (App: App) => {
-	App.component('GIcon', GIcon);
-};
+import { withInstall } from '@xfchenju/utils'
 
 export { GIcon };
-export default GIcon;
+export default withInstall(GIcon);

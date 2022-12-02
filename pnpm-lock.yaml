@@ -58,9 +58,9 @@ importers:
 
   packages/components:
     specifiers:
-      '@xfchenju/utils': workspace:^1.0.0
+      '@xfchenju/utils': workspace:^1.1.1
     dependencies:
-      '@xfchenju/utils': link:../utils
+      '@xfchenju/utils': link:../utils/dist
 
 packages:
 

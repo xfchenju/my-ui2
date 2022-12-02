@@ -3,7 +3,7 @@
  * @Author: chenju
  * @Date: 2022-01-13 18:49:18
  * @LastEditors: chenju
- * @LastEditTime: 2022-12-01 11:22:34
+ * @LastEditTime: 2022-12-02 18:33:27
 -->
 <template>
   <div
@@ -49,7 +49,7 @@ import { BaseTable, BaseTableProps } from '@/BaseTable';
 import { GPageHeader, PageHeaderProps } from '@/PageHeaderNew';
 import type { PageTableProps, PageTableActionType } from '../../types';
 import { pageProps } from './props';
-import { removeUndefinedParams } from '@/utils/index';
+import { removeUndefinedParams } from '@xfchenju/utils';
 import GNoTask from '@/GNoTask';
 export default defineComponent({
   name: 'GPageTable',

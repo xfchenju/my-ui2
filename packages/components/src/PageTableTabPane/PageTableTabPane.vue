@@ -3,7 +3,7 @@
  * @Author: chenju
  * @Date: 2022-03-18 18:25:58
  * @LastEditors: chenju
- * @LastEditTime: 2022-12-01 11:15:52
+ * @LastEditTime: 2022-12-02 18:33:47
 -->
 <template>
   <div class="g-page-tab-pane__content" v-show="active">
@@ -21,7 +21,7 @@ import {
   ref,
   markRaw
 } from 'vue';
-import { throwError } from '@/utils/baseError';
+import { throwError } from '@xfchenju/utils';
 
 const COMPONENT_NAME = 'GPageTabPane';
 

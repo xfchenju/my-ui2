@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@xfchenju/utils": "workspace:^1.0.0"
+    "@xfchenju/utils": "workspace:^1.1.1"
   },
   "repository": {
     "type": "git",
