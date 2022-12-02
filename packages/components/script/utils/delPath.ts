@@ -3,11 +3,12 @@
  * @Author: chenju
  * @Date: 2022-12-02 16:50:45
  * @LastEditors: chenju
- * @LastEditTime: 2022-12-02 16:51:28
+ * @LastEditTime: 2022-12-02 17:38:21
  */
 import fs from 'fs'
 import { resolve } from 'path'
 import { componentPath } from './paths'
+import { PKG_NAME } from '../config'
 const stayFile = ['package.json', 'README.md']
 
 const delPath = async (path: string) => {
@@ -24,7 +25,7 @@ const delPath = async (path: string) => {
         }
       }
     });
-    if (path != `${componentPath}/kitty-ui`) fs.rmdirSync(path);
+    if (path != `${componentPath}/${PKG_NAME}`) fs.rmdirSync(path);
   }
 };
 export default delPath
