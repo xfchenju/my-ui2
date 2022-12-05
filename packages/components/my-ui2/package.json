@@ -18,7 +18,7 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "typings": "lib/index.d.ts",
+  "typings": "lib/src/index.d.ts",
   "author": "xfchenju",
   "license": "MIT",
   "dependencies": {

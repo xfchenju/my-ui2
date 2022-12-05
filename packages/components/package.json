@@ -2,8 +2,8 @@
   "name": "@xfchenju/my-ui2",
   "version": "1.0.8",
   "description": "",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "lib/src/index.js",
+  "module": "es/src/index.js",
   "scripts": {
     "build": "vite build"
   },
@@ -15,7 +15,7 @@
     "my-ui2",
     "vue3组件库"
   ],
-  "typings": "lib/index.d.ts",
+  "typings": "lib/src/index.d.ts",
   "author": "",
   "license": "ISC",
   "repository": {
