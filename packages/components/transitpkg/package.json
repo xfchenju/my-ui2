@@ -22,7 +22,7 @@
   "author": "xfchenju",
   "license": "MIT",
   "dependencies": {
-    "@xfchenju/utils": "workspace:^1.0.0"
+    "@xfchenju/utils": "^1.1.2"
   },
   "repository": {
     "type": "git",
