@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
-    "dist"
+    "es",
+    "lib"
   ],
   "keywords": [],
   "author": "xfchenju",
