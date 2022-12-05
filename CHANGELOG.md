@@ -1,5 +1,7 @@
 
 
+### [1.2.3](https://github.com/xfchenju/my-ui2/compare/1.2.2...1.2.3) (2022-12-05)
+
 ### [1.2.2](https://github.com/xfchenju/my-ui2/compare/1.2.1...1.2.2) (2022-12-05)
 
 ### [1.2.1](https://github.com/xfchenju/my-ui2/compare/1.2.0...1.2.1) (2022-12-05)
