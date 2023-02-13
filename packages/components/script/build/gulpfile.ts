@@ -11,7 +11,7 @@ import { removeDist, buildStyle, buildComponent } from './index'
 export default series(
     async () => removeDist(),
     parallel(
-        // async () => buildStyle(),
+        async () => buildStyle(),
         async () => buildComponent()
     )
 )

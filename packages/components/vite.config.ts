@@ -3,7 +3,7 @@
  * @Author: chenju
  * @Date: 2022-11-30 16:10:06
  * @LastEditors: chenju
- * @LastEditTime: 2022-12-05 14:10:43
+ * @LastEditTime: 2023-02-13 17:13:58
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue"
@@ -73,21 +73,21 @@ export default defineConfig(
       // Components({
       //   resolvers: [ElementPlusResolver()],
       // }),
-      // {
-      //   name: 'style',
-      //   generateBundle(config, bundle) {
-      //     //这里可以获取打包后的文件目录以及代码code
-      //     const keys = Object.keys(bundle)
-      //     for (const key of keys) {
-      //       const bundler: any = bundle[key as any]
-      //       this.emitFile({
-      //         type: 'asset',
-      //         fileName: key,//文件名名不变
-      //         source: bundler.code.replace(/\.scss/g, '.css')
-      //       })
-      //     }
-      //   }
-      // }
+      {
+        name: 'style',
+        generateBundle(config, bundle) {
+          //这里可以获取打包后的文件目录以及代码code
+          const keys = Object.keys(bundle)
+          for (const key of keys) {
+            const bundler: any = bundle[key as any]
+            this.emitFile({
+              type: 'asset',
+              fileName: key,//文件名名不变
+              source: bundler.code.replace(/\.scss/g, '.css')
+            })
+          }
+        }
+      }
     ],
     resolve: {
       alias: {
