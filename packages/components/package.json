@@ -23,7 +23,6 @@
     "url": "git://github.com/xfchenju/my-ui2.git"
   },
   "dependencies": {
-    "@xfchenju/utils": "^1.1.2"
-  },
-  "devDependencies": {}
+    "@xfchenju/utils": "^1.1.5"
+  }
 }

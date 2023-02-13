@@ -58,19 +58,13 @@ importers:
 
   packages/components:
     specifiers:
-      '@xfchenju/utils': ^1.1.1
+      '@xfchenju/utils': ^1.1.5
     dependencies:
       '@xfchenju/utils': link:../utils/dist
 
   packages/components/my-ui2:
     specifiers:
-      '@xfchenju/utils': workspace:^1.0.0
-    dependencies:
-      '@xfchenju/utils': link:../../utils/dist
-
-  packages/components/transitpkg:
-    specifiers:
-      '@xfchenju/utils': workspace:^1.0.0
+      '@xfchenju/utils': ^1.1.2
     dependencies:
       '@xfchenju/utils': link:../../utils/dist
 
