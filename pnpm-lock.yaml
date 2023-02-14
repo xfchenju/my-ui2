@@ -54,24 +54,21 @@ importers:
     specifiers:
       '@xfchenju/my-ui2': workspace:^1.2.0
     dependencies:
-      '@xfchenju/my-ui2': link:../packages/components/my-ui2
+      '@xfchenju/my-ui2': link:../packages/my-ui2
 
   packages/components:
     specifiers:
       '@xfchenju/utils': ^1.1.5
     dependencies:
-      '@xfchenju/utils': link:../utils/dist
+      '@xfchenju/utils': 1.1.5
 
-  packages/components/my-ui2:
+  packages/my-ui2:
     specifiers:
-      '@xfchenju/utils': ^1.1.2
+      '@xfchenju/utils': ^1.1.5
     dependencies:
-      '@xfchenju/utils': link:../../utils/dist
+      '@xfchenju/utils': 1.1.5
 
   packages/utils:
-    specifiers: {}
-
-  packages/utils/dist:
     specifiers: {}
 
 packages:
@@ -702,6 +699,10 @@ packages:
       - '@vue/composition-api'
       - vue
     dev: true
+
+  /@xfchenju/utils/1.1.5:
+    resolution: {integrity: sha512-zLFRINWgUbLvjnknDx+Bu6wOmZKBdqVr/Fu1NgXb+gveS59pnx9+CzWvZeP6A9A+KWQNf4BovfTeCUBkzh8fTQ==}
+    dev: false
 
   /JSONStream/1.3.5:
     resolution: {integrity: sha512-E+iruNOY8VV9s4JEbe1aNEm6MiszPRr/UfcHMz0TQh1BXSxHK+ASV1R6W4HpjBhSeS+54PIsAMCBmwD06LLsqQ==}

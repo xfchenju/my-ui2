@@ -3,7 +3,7 @@
  * @Author: chenju
  * @Date: 2022-11-30 16:10:06
  * @LastEditors: chenju
- * @LastEditTime: 2022-12-02 17:36:43
+ * @LastEditTime: 2023-02-14 14:54:10
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue"
@@ -12,7 +12,7 @@ import dts from 'vite-plugin-dts'
 // import Components from 'unplugin-vue-components/vite'
 // import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import { resolve } from 'path'
-import { PKG_NAME } from './script/config'
+import { PKG_NAME, compOutput } from '../../scripts/config'
 
 export default defineConfig(
   {
@@ -36,7 +36,7 @@ export default defineConfig(
             //让打包目录和我们目录对应
             preserveModules: true,
             //配置打包根目录
-            dir: resolve(__dirname, `./${PKG_NAME}/es`),
+            dir: resolve(compOutput, `es`),
             preserveModulesRoot: PKG_NAME
           },
           {
@@ -45,7 +45,7 @@ export default defineConfig(
             //让打包目录和我们目录对应
             preserveModules: true,
             //配置打包根目录
-            dir: resolve(__dirname, `./${PKG_NAME}/lib`),
+            dir: resolve(compOutput, `lib`),
             preserveModulesRoot: PKG_NAME
           }
         ]
@@ -58,13 +58,13 @@ export default defineConfig(
     plugins: [
       vue(),
       dts({
-        outputDir: resolve(__dirname, `./${PKG_NAME}/es/src`),
+        outputDir: resolve(compOutput, `es/src`),
         //指定使用的tsconfig.json为我们整个项目根目录下掉,如果不配置,你也可以在components下新建tsconfig.json
         tsConfigFilePath: '../../tsconfig.json'
       }),
       //因为这个插件默认打包到es下，我们想让lib目录下也生成声明文件需要再配置一个
       dts({
-        outputDir: resolve(__dirname, `./${PKG_NAME}/lib/src`),
+        outputDir: resolve(compOutput, `lib/src`),
         tsConfigFilePath: '../../tsconfig.json'
       }),
       // AutoImport({

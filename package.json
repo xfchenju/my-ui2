@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:ui": "gulp -f packages/components/script/build/gulpfile.ts",
+    "build:ui": "gulp -f scripts/build/gulpfile.ts",
     "publish:ui": "pnpm run --filter ./packages/components/my-ui2 release",
     "build:utils": "gulp -f packages/utils/script/build/gulpfile.ts",
     "publish:utils": "gulp -f packages/utils/script/publish/gulpfile.ts"

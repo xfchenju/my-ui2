@@ -3,13 +3,11 @@
  * @Author: chenju
  * @Date: 2022-12-02 16:50:45
  * @LastEditors: chenju
- * @LastEditTime: 2022-12-02 17:38:21
+ * @LastEditTime: 2023-02-14 15:26:29
  */
 import fs from 'fs'
 import { resolve } from 'path'
-import { componentPath } from './paths'
-import { PKG_NAME } from '../config'
-const stayFile = ['package.json', 'README.md']
+import { compOutput } from '../config'
 
 const delPath = async (path: string) => {
   let files: string[] = [];
@@ -18,14 +16,12 @@ const delPath = async (path: string) => {
     files.forEach(async (file) => {
       let curPath = resolve(path, file)
       if (fs.statSync(curPath).isDirectory()) { // recurse
-        if (file != 'node_modules') await delPath(curPath);
+        await delPath(curPath);
       } else { // delete file
-        if (!stayFile.includes(file)) {
-          fs.unlinkSync(curPath);
-        }
+        fs.unlinkSync(curPath);
       }
     });
-    if (path != `${componentPath}/${PKG_NAME}`) fs.rmdirSync(path);
+    if (path != `${compOutput}`) fs.rmdirSync(path);
   }
 };
 export default delPath
