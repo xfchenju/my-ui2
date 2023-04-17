@@ -5,8 +5,8 @@
  * @LastEditors: chenju
  * @LastEditTime: 2022-12-02 17:59:36
  */
-import Button from './button'
-import Icon from './icon'
+import MyButton from './MyButton'
+import MyIcon from './MyIcon'
 import BaseTable from './BaseTable'
 import GNoTask from './GNoTask'
 import GIcon from './GIcon'
@@ -21,11 +21,11 @@ import PageTableTabs from './PageTableTabs'
 export type { BaseTableProps } from './BaseTable'
 export type { PageHeaderProps, SearchButtonOptionsType, SearchOptionsType, PageTableProps } from './GPageTable';
 
-const components = [Button, Icon, BaseTable, GNoTask, GIcon, GSelect, GPageTable, usePageTable, GSearchBar, PageHeaderNew, PageTableTabPane, PageTableTabs]
+const components = [MyButton, MyIcon, BaseTable, GNoTask, GIcon, GSelect, GPageTable, usePageTable, GSearchBar, PageHeaderNew, PageTableTabPane, PageTableTabs]
 
 export {
-	Button,
-	Icon,
+	MyButton,
+	MyIcon,
 	BaseTable,
 	GNoTask,
 	GIcon,

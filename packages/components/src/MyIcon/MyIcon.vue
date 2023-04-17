@@ -8,3 +8,4 @@
 <template>
   <div>这是icon组件222</div>
 </template>
+<script setup name="MyIcon"></script>

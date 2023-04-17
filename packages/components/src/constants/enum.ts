@@ -5,16 +5,6 @@
  * @LastEditors: qingyang
  * @LastEditTime: 2022-11-15 11:07:44
  */
-
-import { InventoryYear, InventoryMouth, InventoryMouthHaveAll } from './inventoryYear';
-
-export { InventoryYear, InventoryMouth, InventoryMouthHaveAll };
-
-export { rolesMap, rolesCnEnum } from './userEnum';
-
-//世界末日
-export const ENDOFWORLD = '9999-09-09';
-
 // http请求返回的code码
 export enum HTTP_RESPONSE_CODE {
   // 请求成功

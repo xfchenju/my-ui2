@@ -5,7 +5,7 @@
  * @LastEditors: chenju
  * @LastEditTime: 2022-12-02 18:35:05
  */
-import button from './button.vue'
+import MyButton from './MyButton.vue'
 import { withInstall } from '@xfchenju/utils'
-const Button = withInstall(button)
+const Button = withInstall(MyButton)
 export default Button

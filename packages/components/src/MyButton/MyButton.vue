@@ -18,6 +18,7 @@
       </div>
   </div>
 </template>
+<script setup name="MyButton"></script>
 <style scoped>
 @import './index.scss';
 @import './style/test.scss';

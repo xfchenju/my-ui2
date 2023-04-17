@@ -12,8 +12,8 @@
     <el-button type="warning">测试</el-button>
     <el-button type="danger">测试2</el-button>
     222
-    <Button />
-    <Icon />
+    <MyButton />
+    <MyIcon />
     <!-- <StarrySky></StarrySky> -->
     <div class="test">测试2</div>
     <BaseTable></BaseTable>
@@ -23,7 +23,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { Button, Icon, BaseTable, GNoTask, GIcon } from '@xfchenju/my-ui2'
+import { MyButton, MyIcon, BaseTable, GNoTask, GIcon } from '@xfchenju/my-ui2'
 </script>
 
 <style lang="scss">
